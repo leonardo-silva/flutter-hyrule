@@ -33,6 +33,10 @@ Este curso é indicado para pessoas que já tem conhecimento básico e querem ap
 ![GIF da aplicação em execução](projeto.gif)
 
 
+## Design Figma
+
+- [Link para o design no Figma](https://www.figma.com/design/fc9qOuXaFgpgoWGEAxHfyU/Flutter-Animations-%7C-Hyrule--Community-?node-id=0-1&t=6R1OgPUqij705CY8-1)
+
 ## 🛠️ Abrir e rodar o projeto
 
 Aqui vem um passo a passo para abrir e rodar o projeto.
