@@ -33,7 +33,10 @@ class Details extends StatelessWidget {
               children: <Widget>[
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
-                  child: Text(entry.name.toUpperCase(), style: EntryDecoration.titleText,),
+                  child: Text(
+                    entry.name.toUpperCase(),
+                    style: EntryDecoration.titleText,
+                  ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
@@ -49,10 +52,13 @@ class Details extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(vertical: 8.0),
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(16.0),
-                    child: Image(
-                      image: NetworkImage(entry.image),
-                      width: double.infinity,
-                      fit: BoxFit.cover,
+                    child: Hero(
+                      tag: "hero-image-${entry.name}",
+                      child: Image(
+                        image: NetworkImage(entry.image),
+                        width: double.infinity,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
